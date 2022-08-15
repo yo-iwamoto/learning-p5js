@@ -24,6 +24,18 @@ module.exports = {
       { groups: ['index', 'sibling', 'parent', 'internal', 'external', 'builtin', 'object', 'type'] },
     ],
     '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }], // ignore var start with _
+    '@typescript-eslint/consistent-type-exports': [
+      'error',
+      {
+        fixMixedExportsWithInlineTypeSpecifier: false,
+      },
+    ],
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        prefer: 'type-imports',
+      },
+    ],
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
